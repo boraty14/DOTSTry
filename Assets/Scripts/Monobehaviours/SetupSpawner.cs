@@ -33,7 +33,7 @@ namespace Monobehaviours
 
                     float3 position = new float3(x * spread, 0f, z* spread);
                     entityManager.SetComponentData(instance, new Translation{Value = position});
-                    //entityManager.SetComponentData(instance, new Destination{Value = position});
+                    entityManager.SetComponentData(instance, new Destination{Value = position});
                     float speed = Random.Range(speedRange.x, speedRange.y);
                     entityManager.SetComponentData(instance, 
                         new MovementSpeed{Value = speed});
