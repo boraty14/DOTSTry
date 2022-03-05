@@ -156,6 +156,7 @@ MonoBehaviour:
   gridSize: 100
   spread: 5
   speedRange: {x: 2, y: 10}
+  lifeTimeRange: {x: 5, y: 10}
 --- !u!4 &192286576
 Transform:
   m_ObjectHideFlags: 0

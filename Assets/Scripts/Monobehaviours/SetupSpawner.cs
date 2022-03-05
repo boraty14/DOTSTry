@@ -13,7 +13,9 @@ namespace Monobehaviours
         [SerializeField] private GameObject personPrefab;
         [SerializeField] private int gridSize;
         [SerializeField] private int spread;
-        [SerializeField] private Vector2 speedRange;
+        [SerializeField] private Vector2 speedRange;    
+        [SerializeField] private Vector2 lifeTimeRange;    
+        
 
         private BlobAssetStore _blob;
 
@@ -37,6 +39,9 @@ namespace Monobehaviours
                     float speed = Random.Range(speedRange.x, speedRange.y);
                     entityManager.SetComponentData(instance, 
                         new MovementSpeed{Value = speed});
+                    float lifeTime = Random.Range(lifeTimeRange.x, lifeTimeRange.y);
+                    entityManager.SetComponentData(instance, 
+                        new LifeTime(){Value = lifeTime});
                 }
             }
         }
