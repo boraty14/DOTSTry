@@ -153,8 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personPrefab: {fileID: 6043637345711061027, guid: 4df654e5ab8e5c7458c304c638894afa, type: 3}
-  gridSize: 0
-  spread: 0
+  gridSize: 100
+  spread: 5
+  speedRange: {x: 2, y: 10}
 --- !u!4 &192286576
 Transform:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192286574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.166498, y: 2.9156117, z: 1.1693873}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
